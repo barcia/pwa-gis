@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>My Project</title>
+	<script src="./index.js" defer type="module"></script>
+</head>
+<body>
+	<a href="/">< Proxectos</a>
+	<div>Proxecto</div>
+	<h1 id="title"></h1>
+	<table>
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Latitude</th>
+				<th>Longitude</th>
+				<th>Altitude</th>
+				<th>accuracy</th>
+				<th>Remove</th>
+			</tr>
+		</thead>
+		<tbody id="pointsTable">
+
+		</tbody>
+	</table>
+	<button id="newPointBtn">New point</button>
+
+	<dialog id="createPointDialog">
+		<form id="createPointForm" method="dialog">
+		  <section>
+			<h3>New Point</h3>
+			<p><label>Name:</label> <input name="name" type="text" required></p>
+			<p><label>Catalogado:</label> <input name="name" type="checkbox"></p>
+			<p><label>En perigo:</label> 
+				<select name="danger" id="">
+					<option value="0">No</option>
+					<option value="1">leve</option>
+					<option value="2">grave</option>
+				</select>
+			</p>
+			<p><label>Latitude:</label> <input name="latitude" id="latitude" type="text" readonly></p>
+			<p><label>Longitude:</label> <input name="longitude" id="longitude" type="text" readonly></p>
+			<p><label>Altitude:</label> <input name="altitude" id="altitude" type="text" readonly></p>
+			<p><label>Accuracy:</label> <input name="accuracy" id="accuracy" type="text" readonly></p>
+		  </section>
+		  <menu>
+			<button type="submit">Confirm</button>
+		  </menu>
+		</form>
+	  </dialog>
+</body>
+</html>

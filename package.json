@@ -1,0 +1,20 @@
+{
+  "name": "temp-track",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "start": "parcel --https",
+    "build": "parcel build index.html"
+  },
+  "keywords": [],
+  "type": "module",
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "parcel": "^2.8.0"
+  },
+  "dependencies": {
+    "uuid": "^9.0.0"
+  },
+  "source": ["src/index.html", "src/project/index.html"]
+}

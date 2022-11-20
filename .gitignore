@@ -1,0 +1,9 @@
+# Node
+node_modules
+
+# Parcel
+.parcel-cache
+dist
+
+# Other
+.DS_Store

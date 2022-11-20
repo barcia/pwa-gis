@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Location</title>
+	<script src="./index.js" defer type="module"></script>
+</head>
+<body>
+	<h1>Web Gis</h1>
+	<section id="projects">
+		<h2>Projects</h2>
+		<ul id="projectList"></ul>
+		<button id="newProjectBtn">New project</button>
+	</section>
+
+
+	<dialog id="createProjectDialog">
+		<form id="createProjectForm" method="dialog">
+		  <section>
+			<h3>New project</h3>
+			<p><label for="name">Name:</label> <input name="name" type="text"></p>
+			<p><label for="description">Description:</label> <textarea name="description" cols="30" rows="10"></textarea></p>
+		  </section>
+		  <menu>
+			<button id="cancel" type="reset">Cancel</button>
+			<button type="submit">Confirm</button>
+		  </menu>
+		</form>
+	  </dialog>
+</body>
+</html>
